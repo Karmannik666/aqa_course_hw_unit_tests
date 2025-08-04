@@ -17,7 +17,7 @@
 
 let minAge = 18;
 let maxAge = 60;
-let age = 61;
+let age = 60;
 if (typeof age !== 'number') {
   console.log('incorrect data type');
 }
