@@ -6,8 +6,18 @@
     если элемент нечетный - возведет его в 3ю степень
 
   Значение добавьте в массив 'forOf' 
+
+const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const forof = [];
+for (const a of arr) {
+  if (a % 2 === 0) {
+    forof.push(a ** 2);
+  } else {
+    forof.push(a ** 3);
+  }
+  }
+  console.log(forof);
 */
-const forOf = [];
 
 /*
 2. Методы массивов
@@ -20,7 +30,16 @@ const forOf = [];
   В результате вы должны получить массив [0, 1, 3, 4, 5], присвойте в переменную "result"
 */
 
-let result;
+/*
+const result = [1, 2, 3, 4, 5];
+result.push(6);
+result.unshift(0);
+result.splice(2, 1);
+let arr = result.pop();
+console.log(arr);
+console.log(result);
+*/
+
 
 /*
 3. Деструктуризация массивов
@@ -28,6 +47,14 @@ let result;
   - Через деструктуризацию получите в новые переменные первый, второй и остальные элементы массива
 
   Пример: [1,2,3,4,5] => first === 1; second === 2, rest === [3,4,5]
+*/
+
+/*
+const arr = [3, 11, 32, 7, 20];
+const [first, second, ...rest] = arr;
+console.log(first);
+console.log(second);
+console.log(rest);
 */
 
 /*
@@ -39,4 +66,15 @@ let result;
   Создайте переменную mergedArray, который будет хранить значения из массивов 1 и 2
 */
 
-export { forOf, result, first, second, rest, mergedArray };
+/*
+const arr = [
+  [1, 2, 3, 4, 5],
+  [6, 7, 8, 9, 10],
+];
+for (const mergedArray of arr) {
+    const [first, second, third, fourth, fifth] = mergedArray;
+    console.log(mergedArray);
+}
+*/
+
+//export { forOf, result, first, second, rest, mergedArray };
